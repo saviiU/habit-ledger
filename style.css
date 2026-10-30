@@ -1,0 +1,74 @@
+/* Colors live here so we can reuse them everywhere */
+:root {
+  --paper: #EDE6D6;
+  --card: #F5F0E4;
+  --ink: #2B3A33;
+  --ink-soft: #6B7A6E;
+  --leather: #7A5230;
+  --brass: #B8892B;
+  --rule: #CBC0A4;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+}
+
+.ledger {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+}
+
+.ledger-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--leather);
+  padding-bottom: 16px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+h1 {
+  margin: 4px 0 0;
+  color: var(--leather);
+}
+
+.month-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.month-nav button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--leather);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.month-nav button:hover {
+  background: var(--rule);
+}
+
+#month-label {
+  min-width: 150px;
+  text-align: center;
+  font-weight: bold;
+}
