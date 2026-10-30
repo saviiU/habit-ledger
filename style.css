@@ -72,3 +72,111 @@ h1 {
   text-align: center;
   font-weight: bold;
 }
+.section {
+  margin-top: 24px;
+}
+
+.section-title {
+  margin: 0 0 10px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--leather);
+}
+
+.grid-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--card);
+}
+
+#habit-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#habit-table th,
+#habit-table td {
+  border: 1px solid var(--rule);
+  text-align: center;
+}
+
+#habit-table th {
+  background: #E2D8C1;
+  font-size: 11px;
+  color: var(--ink-soft);
+  padding: 6px 4px;
+  min-width: 28px;
+}
+
+.habit-col {
+  position: sticky;
+  left: 0;
+  min-width: 190px;
+  max-width: 190px;
+  text-align: left !important;
+  background: var(--card);
+  padding: 4px 8px;
+}
+
+#habit-table th.habit-col {
+  background: #E2D8C1;
+}
+
+.habit-input {
+  width: 140px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+}
+
+.habit-input:focus {
+  border-bottom: 1px dashed var(--brass);
+}
+
+.remove-btn {
+  border: none;
+  background: none;
+  color: #A6412F;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.remove-btn:hover {
+  opacity: 1;
+}
+
+.day-cell {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.day-cell:hover {
+  background: rgba(79, 111, 82, 0.14);
+}
+
+.day-cell.done {
+  background: #4F6F52;
+  color: white;
+  font-weight: bold;
+}
+
+.add-btn {
+  margin-top: 12px;
+  padding: 8px 14px;
+  border: 1px dashed var(--leather);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--leather);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: var(--paper);
+}
